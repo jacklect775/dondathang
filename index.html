@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đặt hàng</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<h1>Đặt hàng</h1>
+
+	<form id="order-form" onsubmit="submitForm(event)">
+		<label for="name">Họ tên:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="phone">Số điện thoại:</label>
+		<input type="tel" id="phone" name="phone" required>
+
+		<label for="product">Sản phẩm:</label>
+		<select id="product" name="product" required>
+			<option value="">Chọn sản phẩm</option>
+			<option value="product-1">Sản phẩm 1</option>
+			<option value="product-2">Sản phẩm 2</option>
+			<option value="product-3">Sản phẩm 3</option>
+		</select>
+
+		<label for="quantity">Số lượng:</label>
+		<input type="number" id="quantity" name="quantity" required>
+
+		<button type="submit">Đặt hàng</button>
+	</form>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
